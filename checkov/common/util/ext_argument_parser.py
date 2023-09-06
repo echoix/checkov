@@ -497,7 +497,7 @@ class ExtArgumentParser(configargparse.ArgumentParser):
         self.add(
             "--summary-position",
             default="top",
-            choices=SUMMARY_POSITIONS,
+            choices=sorted(SUMMARY_POSITIONS),
             help="Chose whether the summary will be appended on top (before the checks results) or on bottom "
                  "(after check results), default is on top.",
         )
